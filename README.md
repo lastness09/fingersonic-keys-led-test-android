@@ -4,9 +4,8 @@ A small, open-source Bluetooth test tool for **Fingersonic Keys**. Test the 24 L
 
 **Version 0.1.0-beta.1 is a test build. Android installation and physical Keys/BLE interoperability still require device testing.** A successful build does not verify physical LED behavior.
 
-- [Download APK, source ZIP and checksums](https://fingersonic.com/developers/#keys-led-test)
+- [Download APK, source ZIP and checksums](https://github.com/lastness09/fingersonic-keys-led-test-android/releases/tag/v0.1.0-beta.1)
 - [Keys developer guide](https://github.com/lastness09/fingersonic-keys-devkit)
-- [Developer Kits](https://fingersonic.com/developers/)
 - [Control protocol](PROTOCOL.md) and [device test checklist](VALIDATION.md)
 
 ## Requirements
@@ -19,7 +18,7 @@ Neon Orbit and other custom firmware are not assumed to implement these lighting
 
 ## Install and use
 
-1. Download the APK from Developer Kits. Android may ask you to allow installation from the browser or file manager that opens it. This is a directly distributed test APK, not a Play Store listing.
+1. Download the APK from this repository's Releases page. Android may ask you to allow installation from the browser or file manager that opens it. This is a directly distributed test APK, not a Play Store listing.
 2. Turn on Keys. Open **Keys LED Test**, press **Scan for Keys** and grant the requested Bluetooth permissions. On Android 8-11, BLE scanning also requires Location permission and enabled Location services. No location is collected or transmitted.
 3. Select the discovered Keys device. Choose **Direct LEDs**, **Follow** or **Melody** after connecting. Connecting alone does not send lighting commands.
 4. Select one of the 24 tiles. Adjust RGB and brightness, or choose Red, Green, Blue or White. Sliders only change the preview. Press **Set & on** to send the selected color and turn that LED on. Press **Selected off** to turn it off.
