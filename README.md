@@ -54,7 +54,7 @@ Pinned tools: **JDK 21**, **Gradle 8.9**, **Android Gradle Plugin 8.7.3**, **And
 Install the Android SDK, set `ANDROID_HOME` to it (or create an untracked `local.properties` containing `sdk.dir=...`), and install `platforms;android-35` and `build-tools;35.0.0` through Android Studio's SDK Manager. Review and accept any SDK licenses in your own development environment.
 
 ```sh
-./gradlew testDebugUnitTest lintDebug assembleDebug assembleRelease
+bash gradlew testDebugUnitTest lintDebug assembleDebug assembleRelease
 ```
 
 On Windows, use `gradlew.bat` with the same tasks. The installable debug build is `app/build/outputs/apk/debug/app-debug.apk`. `assembleRelease` produces an unsigned release APK for signing with your own private key; the publisher's signing key is not included. A build signed with another key cannot replace the published APK in place.
